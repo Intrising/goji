@@ -1,13 +1,14 @@
 package middleware
 
 import (
-	"crypto/rand"
+	"math/rand"
 	"encoding/base64"
 	"fmt"
 	"net/http"
 	"os"
 	"strings"
 	"sync/atomic"
+	"time"
 
 	"github.com/zenazn/goji/web"
 )
@@ -44,6 +45,7 @@ func init() {
 	var buf [12]byte
 	var b64 string
 	for len(b64) < 10 {
+		rand.Seed(time.Now().UTC().UnixNano())
 		rand.Read(buf[:])
 		b64 = base64.StdEncoding.EncodeToString(buf[:])
 		b64 = strings.NewReplacer("+", "", "/", "").Replace(b64)
