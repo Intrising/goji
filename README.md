@@ -24,8 +24,8 @@ import (
         "fmt"
         "net/http"
 
-        "github.com/zenazn/goji"
-        "github.com/zenazn/goji/web"
+        "github.com/Intrising/goji"
+        "github.com/Intrising/goji/web"
 )
 
 func hello(c web.C, w http.ResponseWriter, r *http.Request) {

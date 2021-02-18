@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/zenazn/goji/web"
+	"github.com/Intrising/goji/web"
 )
 
 func testURLQuery(r *http.Request, f func(*web.C, http.ResponseWriter, *http.Request)) *httptest.ResponseRecorder {

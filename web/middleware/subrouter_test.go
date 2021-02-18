@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/zenazn/goji/web"
+	"github.com/Intrising/goji/web"
 )
 
 func TestSubRouterMatch(t *testing.T) {

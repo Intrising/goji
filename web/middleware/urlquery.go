@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/zenazn/goji/web"
+	"github.com/Intrising/goji/web"
 	"net/http"
 )
 
